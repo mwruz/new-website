@@ -15,6 +15,7 @@
 
 :root {
     --bcolor: rgb(0,0,0);
+    --insta: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
 body {
@@ -182,6 +183,128 @@ a {
 
 .phone-number i {
     margin-right: 5px;
+}
+
+
+.site-header__socials {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.site-header__socials a {
+    position: relative;
+    display: block;
+    margin-right: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.site-header__socials a::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+}
+
+.site-header__socials a:hover::after {
+    display: block;
+}
+
+#telegram-icon::after {
+    content: "Telegram";
+}
+
+#telegram-icon i:hover {
+    color: #0088cc;
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+#facebook-icon::before {
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    z-index: -2;
+    width: 17px;
+    height: 17px;
+    content: "";
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+}
+
+#facebook-icon::after {
+    content: "Facebook";
+}
+
+#facebook-icon:hover i {
+    color: #1877f2;
+}
+
+#facebook-icon:hover::before {
+    display: block;
+}
+
+#youtube-icon::before {
+    display: none;
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 35%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    z-index: -2;
+}
+
+#youtube-icon:hover i {
+    color: #ff0000;
+}
+
+#youtube-icon:hover::before {
+    display: block;
+}
+
+#youtube-icon::after {
+    content: "Youtube";
+}
+
+#instagram-icon:hover i {
+    background: var(--insta);
+    border-radius: 4px;
+}
+
+#instagram-icon::after {
+    content: "Instagram";
+}
+
+.site-header__login {
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.site-header__login:hover {
+    opacity: 0.7;
+}
+
+.site-header__login i {
+    margin-right: 0;
+    margin-left: 8px;
 }
 
 .site-nav__container {
