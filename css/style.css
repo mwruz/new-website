@@ -923,6 +923,7 @@ a {
     height: 100px;
     margin-bottom: 20px;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 35px; */
+    overflow: hidden;
 }
 
 .main-direction__title {
@@ -962,6 +963,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.mian-derection__image-wrapper img {
+    transition: all 0.3s ease;
+}
+
+.main-directions__link:hover .mian-derection__image-wrapper img {
+    transform: scale(1.05);
 }
 
 .img-definitaion {
