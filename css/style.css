@@ -491,7 +491,7 @@ a {
 .site-nav__dropdown-menu {
     display: none;
     flex-direction: column;
-    width: 350px;
+    width: 320px;
     position: absolute;
     top: 160%;
     transform: translateX(-50%);
