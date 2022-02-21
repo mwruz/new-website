@@ -1031,3 +1031,94 @@ a {
 .videogallery .titlee {
     color: #303F95;
 }
+
+
+/* START ESENTIAL LINKS  */
+
+.links {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: #303F95;
+    position: relative;
+}
+
+.links .section__title {
+    color: #fff;
+}
+
+.links .section__title::after {
+    background-color: #fff;
+}
+
+.links__item {
+    list-style: none;
+}
+
+.links__item a {
+    width: 280px;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.links__item a:hover {
+    box-shadow: rgba(255, 255, 255, 0.7) 0px 0px 10px 5px;
+}
+
+.links__title {
+    text-align: center;
+    font-size: 16px;
+    color: #272727;
+    margin-bottom: 20px;
+}
+
+
+.links .slick-dots {
+    position: absolute;
+    top: -110px;
+    right: 0;
+    width: 280px;
+}
+
+.links .slick-dots li {
+    width: 50px;
+    list-style: none;
+}
+
+.links .slick-dots li button::before {
+    content: "";
+}
+
+/* .links .slick-dots */
+
+.slick-dots li.slick-active::before {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    content: "";
+    background-color:#6b9fed;
+}
+
+.links .slick-list {
+    padding: 40px 0;
+    padding-left: 20px;
+}
+
+.links__list {
+    padding-left: 40px;
+}
+
+
+.links__item img {
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* END OF ESENTIAL LINKS  */
