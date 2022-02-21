@@ -55,22 +55,22 @@ a {
 }
 
 .first-slide {
-    background:linear-gradient(to top, rgba(17, 17, 17,0.5),rgba(39, 39, 39,0.5)), url(../images/water.jpg) no-repeat center center !important;
+    background:linear-gradient(to top, rgba(17, 17, 17,0.7),rgba(39, 39, 39,0.7)), url(../images/water.jpg) no-repeat center center !important;
     background-size: cover !important;
 }
 
 .second-slide {
-    background:linear-gradient(to top, rgba(17, 17, 17,0.5),rgba(39, 39, 39,0.5)), url(../images/water-2.jpg) no-repeat center center !important;
+    background:linear-gradient(to top, rgba(17, 17, 17,0.7),rgba(39, 39, 39,0.7)), url(../images/water-2.jpg) no-repeat center center !important;
     background-size: cover !important;
 }
 
 .third-slide {
-    background:linear-gradient(to top, rgba(17, 17, 17,0.5),rgba(39, 39, 39,0.5)), url(../images/water-3.JPG) no-repeat center center !important;
+    background:linear-gradient(to top, rgba(17, 17, 17,0.7),rgba(39, 39, 39,0.7)), url(../images/water-3.JPG) no-repeat center center !important;
     background-size: cover !important;
 }
 
 .fourth-slide {
-    background:linear-gradient(to top, rgba(17, 17, 17,0.5),rgba(39, 39, 39,0.5)), url(../images/rainy-watering.JPG) no-repeat center center !important;
+    background:linear-gradient(to top, rgba(17, 17, 17,0.7),rgba(39, 39, 39,0.7)), url(../images/rainy-watering.JPG) no-repeat center center !important;
     background-size: cover !important;
 }
 
