@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./map-files/css/style.css">
 
+
+
 </head>
 <body>
 
@@ -475,7 +477,85 @@
 <!-- START FOTOGALLERY  -->
 
 <div class="fotogallery">
-    <h2 class="titlee">Fotogallery</h2>
+    <div class="container">
+        <h2 class="section__title">Fotogallery</h2>
+
+        <div class="wrapper">
+
+            <div class="image-wrapper">
+              <img class="main-image" src="https://lipsum.app/id/23/1000x700" alt="">
+            </div>
+        
+            <div class="option-images">
+        
+              <ul class="option-images__list owl-carousel">
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/23/1000x700">
+                      <img src="https://lipsum.app/id/23/250x150" alt="">
+                    </a>
+                  </li>
+        
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/2/1000x700">
+                      <img src="https://lipsum.app/id/2/250x150" alt="">
+                    </a>
+                  </li>
+        
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/3/1000x700">
+                      <img src="https://lipsum.app/id/3/250x150" alt="">
+                    </a>
+                  </li>
+        
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/4/1000x700">
+                      <img src="https://lipsum.app/id/4/250x150" alt="">
+                    </a>
+                  </li>
+        
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/5/1000x700">
+                      <img src="https://lipsum.app/id/5/250x150" alt="">
+                    </a>
+                  </li>
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/23/1000x700">
+                      <img src="https://lipsum.app/id/23/250x150" alt="">
+                    </a>
+                  </li>
+        
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/2/1000x700">
+                      <img src="https://lipsum.app/id/2/250x150" alt="">
+                    </a>
+                  </li>
+        
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/3/1000x700">
+                      <img src="https://lipsum.app/id/3/250x150" alt="">
+                    </a>
+                  </li>
+        
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/4/1000x700">
+                      <img src="https://lipsum.app/id/4/250x150" alt="">
+                    </a>
+                  </li>
+        
+                  <li class="option-image__item">
+                    <a  data-url="https://lipsum.app/id/5/1000x700">
+                      <img src="https://lipsum.app/id/5/250x150" alt="">
+                    </a>
+                  </li>
+              </ul>
+        
+        
+            </div>
+        
+        
+        
+          </div>
+    </div>
 </div>
 
 
@@ -573,6 +653,7 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="slick/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
 <!-- <script src="https://kit.fontawesome.com/c955ab8686.js" crossorigin="anonymous"></script> -->
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -582,8 +663,59 @@
         <script src="https://code.highcharts.com/maps/modules/map.js"></script>
         <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
         <script src="https://code.highcharts.com/mapdata/countries/uz/uz-all.js"></script>
+
+        
             
         <script src="./map-files/js/main.js"></script>
+
+
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script>
+       let mainImage = document.querySelector(".main-image");
+    let imageItem = document.querySelectorAll(".option-image__item");
+
+    imageItem.forEach(item => {
+      item.addEventListener("click", ()=> {
+        let imageLink = item.querySelector("a").getAttribute("data-url");
+        let image = item.querySelector("img");
+        imageItem.forEach(index => {
+            index.classList.remove("option-image__item-active");
+        })
+        item.classList.add("option-image__item-active");
+        mainImage.src=imageLink;
+
+      })
+
+
+    })
+
+  </script>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    dots: true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:6,
+            nav:true,
+            loop:false
+        }
+    }
+})
+  </script>
 
 
 

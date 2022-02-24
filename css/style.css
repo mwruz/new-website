@@ -1055,12 +1055,117 @@ a {
 }
 
 .fotogallery {
-    height: 80vh;
+    padding: 100px 0;
+    background: linear-gradient(to top, rgba(48, 63, 149,0.9), rgb(48, 63, 149) );
+}
+
+.fotogallery .section__title {
+    color: #fff;
+}
+
+.fotogallery .section__title::before {
+    background-color: #fff;
+}
+
+.fotogallery .wrapper {
+    padding: 0;
+}
+
+
+  .image-wrapper {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .image-wrapper img {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .option-image__item {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    border: 1px solid transparent;
+  }
+
+  .option-image__item::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background-color: rgba(0, 0, 0,0.3);
+  }
+
+  .option-image__item-active {
+      border-color: #fff !important;
+  }
+
+  .option-image__item-active::before {
+      display: none;
+  }
+
+  .option-image__item img {
+    width: 156px !important;
+    height: 100px;
+  }
+
+  .option-images__list {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-100%);
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-100%);
+  }
+
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0;
+    margin: 0;
+    background: #fff !important;
+    color: #303F95 !important;
+    font-size: 30px !important;
+    line-height: 1 !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to top, rgba(48, 63, 149,0.9), rgb(48, 63, 149) );
-}
+  }
+
+  .owl-nav .owl-prev span {
+    position: relative;
+    top: -2px;
+    left: -1px;
+  }
+
+  .owl-nav .owl-next span {
+    position: relative;
+    top: -2px;
+    left: 1px;
+  }
+
+  .owl-nav .disabled {
+    opacity: 0.6;
+  }
+
 
 .videogallery {
     height: 80vh;

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .wrapper {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    .image-wrapper img {
+      width: 800px;
+      height: 500px;
+      margin: 0 auto;
+    }
+
+    .option-image__item {
+      cursor: pointer;
+    }
+
+    .option-image__item img {
+      width: 160px !important;
+      height: 100px;
+    }
+
+    .option-images__list {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .owl-prev {
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      transform: translateY(-100%);
+    }
+
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      right: -50px;
+      transform: translateY(-100%);
+    }
+
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      padding: 0;
+      margin: 0;
+      background: #333 !important;
+      color: #fff !important;
+      font-size: 30px !important;
+      line-height: 1 !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .owl-nav .owl-prev span {
+      position: relative;
+      top: -2px;
+      left: -1px;
+    }
+
+    .owl-nav .owl-next span {
+      position: relative;
+      top: -2px;
+      left: 1px;
+    }
+
+    .owl-nav .disabled {
+      opacity: 0.6;
+    }
+
+  </style>
+
+  <body>
+
+
+  <div class="wrapper">
+
+    <div class="image-wrapper">
+      <img class="main-image" src="https://lipsum.app/id/23/1000x700" alt="">
+    </div>
+
+    <div class="option-images">
+
+      <ul class="option-images__list owl-carousel">
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/23/1000x700">
+              <img src="https://lipsum.app/id/23/250x150" alt="">
+            </a>
+          </li>
+
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/2/1000x700">
+              <img src="https://lipsum.app/id/2/250x150" alt="">
+            </a>
+          </li>
+
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/3/1000x700">
+              <img src="https://lipsum.app/id/3/250x150" alt="">
+            </a>
+          </li>
+
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/4/1000x700">
+              <img src="https://lipsum.app/id/4/250x150" alt="">
+            </a>
+          </li>
+
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/5/1000x700">
+              <img src="https://lipsum.app/id/5/250x150" alt="">
+            </a>
+          </li>
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/23/1000x700">
+              <img src="https://lipsum.app/id/23/250x150" alt="">
+            </a>
+          </li>
+
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/2/1000x700">
+              <img src="https://lipsum.app/id/2/250x150" alt="">
+            </a>
+          </li>
+
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/3/1000x700">
+              <img src="https://lipsum.app/id/3/250x150" alt="">
+            </a>
+          </li>
+
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/4/1000x700">
+              <img src="https://lipsum.app/id/4/250x150" alt="">
+            </a>
+          </li>
+
+          <li class="option-image__item">
+            <a  data-url="https://lipsum.app/id/5/1000x700">
+              <img src="https://lipsum.app/id/5/250x150" alt="">
+            </a>
+          </li>
+      </ul>
+
+
+    </div>
+
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script>
+
+
+
+    let mainImage = document.querySelector(".main-image");
+    let imageItem = document.querySelectorAll(".option-image__item");
+
+    imageItem.forEach(item => {
+      item.addEventListener("click", ()=> {
+        let imageLink = item.querySelector("a").getAttribute("data-url");
+        let image = item.querySelector("img");
+
+        mainImage.src=imageLink;
+
+      })
+
+
+    })
+
+
+  </script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    dots: true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:6,
+            nav:true,
+            loop:false
+        }
+    }
+})
+  </script>
+
+  </body>
+</html>
