@@ -1153,13 +1153,13 @@ a {
 
   .owl-nav .owl-prev span {
     position: relative;
-    top: -2px;
+    top: 0px;
     left: -1px;
   }
 
   .owl-nav .owl-next span {
     position: relative;
-    top: -2px;
+    top: 0px;
     left: 1px;
   }
 
