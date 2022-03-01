@@ -95,9 +95,18 @@ popupCloseIcon.addEventListener('click', ()=> {
 })
 
 let siteNav = document.querySelector(".site-nav");
-
+let siteBody = document.querySelector("body");
 let siteNavHumBtn = document.querySelector(".humburger-btn");
+let siteContainer = document.querySelectorAll('.container')
 
 siteNavHumBtn.addEventListener("click", () => {
   siteNav.classList.toggle('site-nav-active');
+  siteBody.classList.toggle("body-active");
+})
+
+
+siteContainer.forEach(item => {
+  item.addEventListener("click", ()=> {
+    siteNav.classList.remove(".site-nav-active");
+  })
 })
