@@ -27,6 +27,8 @@ body {
 
 
 
+
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -48,6 +50,10 @@ a {
 }
 
 
+h1 {
+    color: rgba(48, 63, 149, 0.4);
+}
+
 .site-header-wrapper {
     width: 100vw;
     height: 100vh;
@@ -55,22 +61,22 @@ a {
 }
 
 .first-slide {
-    background:linear-gradient(to top, rgba(17, 17, 17,0.6),rgba(39, 39, 39,0.6)), url(../images/water.jpg) no-repeat center center !important;
+    background:linear-gradient(to top, rgba(48, 63, 149, 0.3),rgba(48, 63, 149, 0.5)), url(../images/water.jpg) no-repeat center center !important;
     background-size: cover !important;
 }
 
 .second-slide {
-    background:linear-gradient(to top, rgba(17, 17, 17,0.6),rgba(39, 39, 39,0.6)), url(../images/water-2.jpg) no-repeat center center !important;
+    background:linear-gradient(to top, rgba(48, 63, 149, 0.3),rgba(48, 63, 149, 0.5)), url(../images/water-2.jpg) no-repeat center center !important;
     background-size: cover !important;
 }
 
 .third-slide {
-    background:linear-gradient(to top, rgba(17, 17, 17,0.6),rgba(39, 39, 39,0.6)), url(../images/water-3.JPG) no-repeat center center !important;
+    background:linear-gradient(to top, rgba(48, 63, 149, 0.3),rgba(48, 63, 149, 0.5)), url(../images/water-3.JPG) no-repeat center center !important;
     background-size: cover !important;
 }
 
 .fourth-slide {
-    background:linear-gradient(to top, rgba(17, 17, 17,0.6),rgba(39, 39, 39,0.6)), url(../images/rainy-watering.JPG) no-repeat center center !important;
+    background:linear-gradient(to top, rgba(48, 63, 149, 0.3),rgba(48, 63, 149, 0.5)), url(../images/rainy-watering.JPG) no-repeat center center !important;
     background-size: cover !important;
 }
 
@@ -317,7 +323,7 @@ a {
 .site-header__popup-wrapper {
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 500;
@@ -1064,7 +1070,7 @@ a {
     color: #fff;
 }
 
-.fotogallery .section__title::before {
+.fotogallery .section__title::after {
     background-color: #fff;
 }
 

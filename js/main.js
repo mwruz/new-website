@@ -90,6 +90,14 @@ loginBtn.addEventListener('click', ()=>{
     loginPopup.classList.add('site-header__popup-wrapper-active');
 })
 
-popupCloseIcon.addEventListener('click', ()=> [
-    loginPopup.classList.remove('site-header__popup-wrapper-active')
-])
+popupCloseIcon.addEventListener('click', ()=> {
+    loginPopup.classList.remove('site-header__popup-wrapper-active');
+})
+
+let siteNav = document.querySelector(".site-nav");
+
+let siteNavHumBtn = document.querySelector(".humburger-btn");
+
+siteNavHumBtn.addEventListener("click", () => {
+  siteNav.classList.toggle('site-nav-active');
+})

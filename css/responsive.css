@@ -1,0 +1,121 @@
+/* TABLSET VERSION  */
+
+/* START SITE HEADER  */
+
+@media screen  and (max-width: 850px){
+    body {
+        overflow: hidden !important;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .site-logo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .site-logo span {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .site-header__phone-numbers {
+        display: none;
+    }
+
+    .site-header__socials a{
+        display: none;
+    }
+
+    .site-header__login {
+        display: none;
+    }
+
+    .humburger-btn {
+        display: block !important;
+        cursor: pointer;
+    }
+
+    .humburger-btn div {
+        transform: rotate(180deg);
+    }
+
+    .site-nav {
+        display: none;
+        width: 380px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 25;
+        color: #303F95;
+        animation: growDown 300ms ease-in-out forwards;
+    }
+
+    @keyframes growDown {
+        0% {
+            transform: scaleX(0)
+        }
+        100% {
+            transform: scaleX(1)
+        }
+    }
+
+    .site-nav-active {
+        display: block;
+    }
+
+    .site-nav__container {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .site-nav a {
+        color: #303F95;
+    }
+
+    .site-nav__list {
+        flex-direction: column;
+    }
+
+    .site-nav__item {
+        width: 320px;
+        border-bottom: 1px solid #303F95;
+    }
+
+    .site-nav__link {
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .site-nav__dropdown-menu {
+        position: unset;
+    }
+
+    .second-dropdown li {
+        padding-left: 35px;
+    }
+
+    .site-nav__item {
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .site-nav__item:hover .site-nav__link{
+         background: linear-gradient(to top, rgba(48, 63, 149,0.6), rgb(48, 63, 149,0.7) );
+    }
+
+    .site-nav__item:hover .site-nav__link {
+        color: #fff;
+        opacity: 1;
+    }
+
+    .site-nav__dropdown-menu .dropdown-link {
+        padding-left: 40px;
+    }
+}
