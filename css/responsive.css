@@ -4,7 +4,7 @@
 
 @media screen  and (max-width: 850px){
     body {
-        overflow: hidden !important;
+        overflow-x: hidden;
     }
 
     .body-active {
@@ -22,6 +22,14 @@
         background-color: rgba(0,0,0,0.4);
     }
 
+    .site-header {
+        background-color: #fff;
+    }
+
+    .site-header__top {
+        padding: 15px 0 ;
+    }
+
     .container {
         max-width: 90%;
     }
@@ -33,7 +41,8 @@
 
     .site-logo span {
         width: 200px;
-        font-size: 14px;
+        font-size: 16px;
+        color: #303F95;
     }
 
     .site-header__phone-numbers {
@@ -61,6 +70,7 @@
         display: none;
         width: 380px;
         height: 150vh;
+        padding-top: 80px;
         position: absolute;
         top: 0;
         left: 0;
@@ -132,5 +142,9 @@
 
     .site-nav__dropdown-menu .dropdown-link {
         padding-left: 40px;
+    }
+
+    .slick-dots li {
+        display: none !important;
     }
 }
