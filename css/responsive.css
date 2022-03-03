@@ -35,6 +35,7 @@
 
     .container {
         max-width: 90%;
+        overflow-x: hidden;
     }
 
     .region-map {
