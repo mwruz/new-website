@@ -199,6 +199,10 @@
 
 
 @media screen and (max-width: 500px) {
+    .site-nav {
+        width: 300px;
+    }
+
     .main-directions__list {
         grid-template-columns: 280px;
         grid-column-gap: 0 !important;
