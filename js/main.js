@@ -105,8 +105,9 @@ siteNavHumBtn.addEventListener("click", () => {
 })
 
 
-siteContainer.forEach(item => {
-  item.addEventListener("click", ()=> {
-    siteNav.classList.remove(".site-nav-active");
-  })
-})
+$(document).click(function() {
+  let container = $("");
+  if (!container.is(event.target) && !container.has(event.target).length) {
+      container.hide();
+  }
+});
