@@ -24,9 +24,8 @@
 
     .site-header {
         width: 100vw;
-        margin: 0;
         background-color: #fff;
-        position: fixed !important;
+        position: fixed;
         top: 0;
     }
 
@@ -36,6 +35,13 @@
 
     .container {
         max-width: 90%;
+        overflow-x: hidden;
+    }
+
+    .region-map {
+        max-width: 95%;
+        margin: 0 auto;
+        overflow-x: hidden;
     }
 
     .site-logo img{
