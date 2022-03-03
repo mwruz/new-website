@@ -28,7 +28,6 @@
         background-color: #fff;
         position: fixed !important;
         top: 0;
-        right: 0;
     }
 
     .site-header__top {
@@ -199,6 +198,7 @@
 
 
 @media screen and (max-width: 500px) {
+    
     .site-nav {
         width: 300px;
     }
