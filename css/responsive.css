@@ -196,6 +196,23 @@
         align-items: center;
         justify-content: center;
     }
+
+    .links__list {
+        padding-left: 0;
+    }
+
+    .links__item a {
+        padding: 0;
+        height: 250px;
+    }
+
+    .slick-prev {
+        left: -10px;
+    }
+
+    .slick-next {
+        right: -10px;
+    }
 }
 
 
